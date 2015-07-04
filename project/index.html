@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- My CSS stylesheet link  -->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <title> Guess the Number Game</title>
+</head>
+<!-- Header Area  -->
+<header>
+  <div>
+    <h1>Guess the Number Game!! </h1>
+    <h2>By: Jeff Ward</h2>
+  </div>
+</header>
+
+<body>
+  <div id="container">
+    <div id="left">
+      <section>
+        <h3>-Instructions-</h3>
+        <h4>Enter 2 numbers for the computer to think of a number between!</h4>
+        <form>
+          <fieldset>
+            <h4>First Number:</h4>
+            <input type="text" name="firstNumber" id="firstNumber">
+            <br>
+            <h4>Second Number:</h4>
+            <input type="text" name="secondNumber" id="secondNumber">
+            <br>
+            <button type="button" onclick="generateRandom()">Generate Random Number</button>
+            <div class="output" id="randomNumber"></div>
+          </fieldset>
+        </form>
+
+        <br>
+        <fieldset>
+          <button type="button" onclick="show()">Show Random Number(dont cheat)</button>
+          <div class="output" id="show"></div>
+        </fieldset>
+        <h4>Enter your Guess!</h4>
+        <form>
+          <input type="text" name="guess" id="guess">
+          <br>
+          <button type="button" onclick="guessNow()">Submit your Guess!</button>
+        </form>
+        <div class="output" id="status"></div>
+        <br>
+      </section>
+    </div>
+    <div id="right">
+      <section>
+        <button type="button" onclick="score()">Check your Score</button>
+        <div class="output" id="score"></div>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
