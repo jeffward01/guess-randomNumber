@@ -45,3 +45,8 @@ function guessNow(userGuess) {
 function score() {
   document.getElementById("score").innerHTML = "<h5>It took you  " + counter + " times to guess correctly!</h5>";
 }
+
+
+//Github:
+$ cat .gitattributes
+  *.rb linguist-language=JavaScript
